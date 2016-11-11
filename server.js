@@ -66,12 +66,12 @@ app.post('/api/saved', function(req, res){
 
   // Save article based on the JSON input. 
   // We'll use Date.now() to always get the current date time
-  Article.create({"title": req.body.title, "date": Date.now()}, function(err){
+  Article.create({"title": req.body.title, "date": req.body.date, "url": req.body.url}, function(err){
     if(err){
       console.log(err);
     }
     else {
-      res.send("Saved Search");
+      res.send("Saved Article");
     }
   })
 });
