@@ -23,7 +23,7 @@ var Results = React.createClass({
 						{/* Here we use a map function to loop through an array in JSX*/}
 						{this.props.results.map(function(search, i)
 							{
-								return <form><p key={i}>{search.title} <br /> {search.date} <br /> {search.url}</p><button></button></form>
+								return <p key={i}>{search.title} <br /> {search.date} <br /> {search.url}</p>
 							}
 						)}
 

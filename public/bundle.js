@@ -21670,17 +21670,22 @@
 					),
 					this.props.results.map(function (search, i) {
 						return React.createElement(
-							"p",
-							{ key: i },
-							search.title,
-							" ",
-							React.createElement("br", null),
-							" ",
-							search.date,
-							" ",
-							React.createElement("br", null),
-							" ",
-							search.url
+							"form",
+							null,
+							React.createElement(
+								"p",
+								{ key: i },
+								search.title,
+								" ",
+								React.createElement("br", null),
+								" ",
+								search.date,
+								" ",
+								React.createElement("br", null),
+								" ",
+								search.url
+							),
+							React.createElement("button", null)
 						);
 					})
 				)
