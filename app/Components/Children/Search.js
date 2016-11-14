@@ -61,10 +61,10 @@ var Search = React.createClass({
 								*/}
 								<input type="text" className="form-control text-center" id="term" onChange= {this.handleChange} required/>
 								<br />
-								<h4 className=""><strong>Start Year (Optional?):</strong></h4>
+								<h4 className=""><strong>Start Year:</strong></h4>
 								<input type="text" className="form-control text-center" id="startYear" onChange= {this.handleChange} required/>
 								<br />
-								<h4 className=""><strong>End Year (Optional?):</strong></h4>
+								<h4 className=""><strong>End Year:</strong></h4>
 								<input type="text" className="form-control text-center" id="endYear" onChange= {this.handleChange} required/>
 								<br />
 								<button type="button" className="btn btn-primary" onClick={this.handleClick}>Submit</button>

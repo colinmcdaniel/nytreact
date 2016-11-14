@@ -21555,7 +21555,7 @@
 							React.createElement(
 								'em',
 								null,
-								'Enter a landmark to search for its exact address (ex: "Eiffel Tower").'
+								'Search news articles and save some for later!'
 							)
 						)
 					),
@@ -23351,7 +23351,7 @@
 								React.createElement(
 									"strong",
 									null,
-									"Start Year (Optional?):"
+									"Start Year:"
 								)
 							),
 							React.createElement("input", { type: "text", className: "form-control text-center", id: "startYear", onChange: this.handleChange, required: true }),
@@ -23362,7 +23362,7 @@
 								React.createElement(
 									"strong",
 									null,
-									"End Year (Optional?):"
+									"End Year:"
 								)
 							),
 							React.createElement("input", { type: "text", className: "form-control text-center", id: "endYear", onChange: this.handleChange, required: true }),

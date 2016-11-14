@@ -122,7 +122,7 @@ var Main = React.createClass({
 
 					<div className="jumbotron">
 						<h2 className="text-center">New York Times Article Scrubber</h2>
-						<p className="text-center"><em>Enter a landmark to search for its exact address (ex: "Eiffel Tower").</em></p>
+						<p className="text-center"><em>Search news articles and save some for later!</em></p>
 					</div>
 
 					<div className="col-md-6">
