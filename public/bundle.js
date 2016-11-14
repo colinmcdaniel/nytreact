@@ -21618,10 +21618,17 @@
 							"p",
 							{ key: i },
 							search.title,
-							" - ",
+							" ",
+							React.createElement("br", null),
+							" ",
 							search.date,
-							" - ",
-							search.url
+							" ",
+							React.createElement("br", null),
+							" ",
+							search.url,
+							" ",
+							React.createElement("br", null),
+							React.createElement("br", null)
 						);
 					})
 				)
@@ -21674,11 +21681,6 @@
 				React.createElement(
 					'div',
 					{ className: 'panel-body text-center' },
-					React.createElement(
-						'h1',
-						null,
-						'Title:'
-					),
 					this.props.results.map(function (search, i) {
 						return React.createElement(
 							'form',
@@ -21696,7 +21698,9 @@
 								'button',
 								{ type: 'submit' },
 								'Save'
-							)
+							),
+							React.createElement('br', null),
+							React.createElement('br', null)
 						);
 					})
 				)

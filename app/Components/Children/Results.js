@@ -26,11 +26,9 @@ var Results = React.createClass({
 					<h3 className="panel-title text-center">Top Articles</h3>
 				</div>
 				<div className="panel-body text-center">
-
-					<h1>Title:</h1>
 					
 					{this.props.results.map((search, i) => {
-              			return <form key={i} onSubmit={this.handleSaveClick.bind(null, search.title, search.date, search.url)}>{search.title} <br />{search.date} <br />{search.url} <br /><button type="submit">Save</button></form>
+              			return <form key={i} onSubmit={this.handleSaveClick.bind(null, search.title, search.date, search.url)}>{search.title} <br />{search.date} <br />{search.url} <br /><button type="submit">Save</button><br /><br /></form>
 					})}
 
 				</div>
