@@ -49,9 +49,7 @@ app.get('/api/saved', function(req, res) {
   console.log("Hit!");
 
   // Find all the records, sort it in descending order for publish date
-  Article.find({}).sort([['date', 'descending']])
-    .exec(function(err, doc){
-
+  Article.find({}).sort([['date', 'descending']]).exec(function(err, doc){
       if(err){
         console.log(err);
       }
@@ -74,6 +72,19 @@ app.post('/api/saved', function(req, res){
     }
     else {
       res.send("Saved Article");
+    }
+  })
+});
+
+
+// Components will use this to save an article to the database
+app.delete('/api/saved/:id', function(req, res){
+  Article.find({_id: req.params.id}).remove().exec(function(err){
+    if(err){
+      console.log(err);
+    }
+    else {
+      res.send("Deleted Article");
     }
   })
 });

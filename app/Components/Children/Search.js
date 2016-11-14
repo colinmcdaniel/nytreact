@@ -27,13 +27,13 @@ var Search = React.createClass({
 	// When a user submits... 
 	handleClick: function(){
 
-		console.log("CLICK");
-		console.log("this.state.term");
-		console.log(this.state.term);
-		console.log("this.state.startYear");
-		console.log(this.state.startYear);
-		console.log("this.state.endYear");
-		console.log(this.state.endYear);
+		// console.log("CLICK");
+		// console.log("this.state.term");
+		// console.log(this.state.term);
+		// console.log("this.state.startYear");
+		// console.log(this.state.startYear);
+		// console.log("this.state.endYear");
+		// console.log(this.state.endYear);
 
 		
 		// Set the parent to have the search term
