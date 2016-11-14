@@ -24,6 +24,7 @@ app.use(express.static('./public'));
 
 // MongoDB Configuration configuration (Change this URL to your own DB)
 mongoose.connect('mongodb://localhost/nytreact');
+// mongoose.connect('mongodb://heroku_6tfffl3w:s61n3t3a77dgmn3p5n194ne2qm@ds051170.mlab.com:51170/heroku_6tfffl3w');
 var db = mongoose.connection;
 
 db.on('error', function (err) {
@@ -45,8 +46,9 @@ app.get('/', function(req, res){
 // We will call this route the moment our page gets rendered
 // Components use this to query MongoDB for all saved articles
 app.get('/api/saved', function(req, res) {
+  console.log("Hit!");
 
-  // Find all the records, sort it in descending order for saved date, then limit the records to 5
+  // Find all the records, sort it in descending order for publish date
   Article.find({}).sort([['date', 'descending']])
     .exec(function(err, doc){
 

@@ -20,9 +20,8 @@ module.exports = (
 
 	/*High level component is the Main component*/
 	<Route path='/' component={Main}>
-
-		{/* If user selects Info or Chat show the appropriate component*/}
-		<Route path='info' component={Info} />
+		<IndexRoute component = {EmptyResults} />
+		<Route path='emptyresults' component={EmptyResults} />
 		<Route path='chat' component={Chat} />
 
 		{/*If user selects any other path... we get the Info Route*/}

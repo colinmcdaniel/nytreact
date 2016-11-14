@@ -48,11 +48,13 @@ var Main = React.createClass({
 		});
 	},
 
+
+
 	// If the component changes (i.e. if a search is entered)... 
 	componentDidUpdate: function(prevProps, prevState){
 
 		if(prevState.searchTerm != this.state.searchTerm || prevState.searchStartYear != this.state.searchStartYear || prevState.searchEndYear != this.state.searchEndYear){
-			console.log("UPDATED");
+			// console.log("UPDATED");
 
 			// Run the query for the address
 			helpers.runQuery(this.state.searchTerm, this.state.searchStartYear, this.state.searchEndYear)
@@ -69,24 +71,24 @@ var Main = React.createClass({
 						// console.log(data);
 
 						// After we've received the result... then post the search term to our history. 
-						helpers.postHistory(this.state.searchTerm, this.state.searchStartYear, this.state.searchEndYear)
-							.then(function(data){
-								console.log("Updated!");
+						// helpers.postHistory(this.state.searchTerm, this.state.searchStartYear, this.state.searchEndYear)
+						// 	.then(function(data){
+						// 		console.log("Updated!");
 
-								// After we've done the post... then get the updated history
-								helpers.getHistory()
-									.then(function(response){
-										console.log("Current History", response.data);
-										if (response != this.state.history){
-											console.log ("History", response.data);
+						// 		// After we've done the post... then get the updated history
+						// 		helpers.getHistory()
+						// 			.then(function(response){
+						// 				console.log("Current History", response.data);
+						// 				if (response != this.state.history){
+						// 					// console.log ("History", response.data);
 
-											this.setState({
-												history: response.data
-											})
-										}
-									}.bind(this))	
-							}.bind(this)
-						)
+						// 					this.setState({
+						// 						history: response.data
+						// 					})
+						// 				}
+						// 			}.bind(this))	
+						// 	}.bind(this)
+						// )
 					}
 				}.bind(this))
 				
@@ -100,7 +102,7 @@ var Main = React.createClass({
 		helpers.getHistory()
 			.then(function(response){
 				if (response != this.state.history){
-					console.log ("History", response.data);
+					// console.log ("History", response.data);
 
 					this.setState({
 						history: response.data
