@@ -1,8 +1,19 @@
-# New York Times (NYT) Article Scrubber
-
-MERN (Mongo-Express-React-Node) app that uses the mongoose and axios packages to allow users to search the NYT API and subsequently save articles to a database for later reading.
+# New York Times Article Scrubber
 
 * [Deployed Application Link](https://nyt-article-saver.herokuapp.com/)
 
-![nyt](https://cloud.githubusercontent.com/assets/18273101/21715171/d8ae5cf8-d3b7-11e6-840e-3204e9b29412.gif)
+## Functionality
 
+This web application allows users to search New York Times articles by topic and date and subsequently save chosen articles for later reading.
+
+## Technologies used
+
+* MongoDB
+* Express
+* React
+* Node.js
+* Mongoose object modeling tool for MongoDB
+* Axios npm package
+* New York Times API
+
+![nyt](https://cloud.githubusercontent.com/assets/18273101/21715171/d8ae5cf8-d3b7-11e6-840e-3204e9b29412.gif)
