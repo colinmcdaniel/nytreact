@@ -1,6 +1,7 @@
 # New York Times Article Scrubber
 
-* [Deployed Application Link](https://nyt-article-saver.herokuapp.com/)
+* [Deployed Application](https://nyt-article-saver.herokuapp.com/)
+* [GitHub Repository](https://github.com/colinmcdaniel/nytreact)
 
 ## Functionality
 
