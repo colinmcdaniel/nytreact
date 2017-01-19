@@ -7,7 +7,7 @@
 
 This web application allows users to search New York Times articles by topic and date and subsequently save chosen articles for later reading.
 
-## Technologies used
+## Technologies
 
 * MongoDB
 * Express
